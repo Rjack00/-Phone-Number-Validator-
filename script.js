@@ -8,26 +8,6 @@ const regex = /\d{10}/;
 
 const regex2 = /\d{3}/;
 
-
-
-
-// const numberCheck2 = () => {
-//     console.log(numTest, userInput.value);
-//     if (userInput.value === "") {
-//         return alert("Please provide a phone number");
-//     }
-//     if (numTest) {
-//        return resultsDiv.innerHTML = `
-//             <h4 class="valid">Valid US number:</h4>
-//             <h4 class="valid">${userInput.value}</h4>`;
-//     } else {
-//       return  resultsDiv.innerHTML = `
-//             <h4 class="invalid">Invalid US number:</h4>
-//             <h4 class="invalid">${userInput.value}</h4>`;
-//     }
-
-// }
-
 const numberCheck = (num) => {
     const numTest = regex2.test(num);
     console.log(numTest, num);
