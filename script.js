@@ -25,7 +25,14 @@ const numberCheck = (phoneNumber) => {
     userInput.value = "";
 }
 
-checkBtn.addEventListener("click", () => numberCheck(userInput.value))
+
+ checkBtn.addEventListener("click", () => numberCheck(userInput.value))
+
+ userInput.addEventListener("keypress", (e) => {
+    if(e.key === "Enter") {
+        numberCheck(userInput.value)
+    }
+ })
 
 clearBtn.addEventListener("click", () => resultsDiv.textContent = "")
 
