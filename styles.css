@@ -1,6 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body{
+    display: flex;
+    justify-content: center;
     background-color: black;
     color: white;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+#phone-div {
+    text-align: center;
+    background-color: white;
+    margin: 50px auto auto auto;
+    border-radius: 10px;
+    height: 450px;
+    width: 250px;
+}
+
+#camera-hole {
+    margin: 7px auto 5px auto;
+    width: 5px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+#phone-screen-div {
+    padding-top: 30px;
+    margin: 8px 10px 15px 10px;
+    background-color: black;
+    height: 92%;
+}
+
+#user-input {
+    text-align: center;
+    margin: 20px auto 15px auto;
+    background-color: #e4e4e4;
+}
+
+button {
+    border-radius: 5px;
+}
+
+#results-div {
+    margin-top: 60px;
 }
 
 .valid {
@@ -8,5 +60,9 @@ body{
 }
 
 .invalid {
-    color: red;
+    color: #ff4141;
+}
+
+.number {
+    margin-top: 15px;
 }
